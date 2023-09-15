@@ -10,6 +10,7 @@ module.exports = (sequelize, DataTypes) => {
       defaultValue: "Pending", // Completed + Cancelled others?
     },
     date_time: DataTypes.DATE,
+    next_execute_date_time: DataTypes.DATE,
   });
 
   Task.associate = (models) => {
